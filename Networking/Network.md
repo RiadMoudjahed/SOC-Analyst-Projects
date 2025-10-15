@@ -16,6 +16,7 @@ In this project, I am going to show you how to make a lab and configure the netw
 
 - **WAN:** `192.168.16.0/24` is the subnet IP of `VMnet8 > em0`, connecting the Virtual Machines and the host.  
 - **pfSense:** `192.168.25.1` functions as a router and firewall, monitoring every device on the LAN.
+- **Windows 10, Ubuntu, Kali Linux** are on the same LAN which are connected to **pfSense**.
 
 ---
 
