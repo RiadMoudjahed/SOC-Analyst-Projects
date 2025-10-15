@@ -31,4 +31,17 @@ In this project, I am going to show you how to make a lab and configure the netw
   <img src="https://github.com/user-attachments/assets/4563aad6-39bf-4b5f-b2a5-01aa7ba3ea97" alt="pfSense Network Diagram" width="700">
 </p>
 
+---
+
+### Windows 10, Ubuntu, and Kali Linux Network Layout 👇
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/10c10dfc-5aa3-49b1-a1a2-e652e761b595" alt="Lab Screenshot 1" width="48%">
+  <img src="https://github.com/user-attachments/assets/40fe4cac-2338-4995-ba81-66065ecaa7a7" alt="Lab Screenshot 2" width="48%">
+</p>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/cacba5e2-7e42-4229-a567-f3f75c2c54de" alt="Lab Screenshot 3" width="60%">
+</p>
+
 Continuing Soon...
