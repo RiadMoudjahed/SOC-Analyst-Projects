@@ -15,6 +15,7 @@ Before we get started, head to **Edit > Virtual Network Editor**, based on how m
   <img src="https://github.com/user-attachments/assets/b59d7fe6-2609-4da1-a79d-4eab325d8aaa" alt="Lab Configuration Overview" width="60%">
 </p>
 I added extra networks in anticipation of any future updates to our lab.
+
 ---
 
 ### Network Details
