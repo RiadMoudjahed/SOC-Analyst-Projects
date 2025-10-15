@@ -10,6 +10,11 @@ In this project, I am going to show you how to make a lab and configure the netw
   <img src="https://github.com/user-attachments/assets/73a1ea38-87c6-48e3-81df-c7bd885950d1" alt="Network Diagram" width="600">
 </p>
 
+Before we get started, head to **Edit > Virtual Network Editor**, based on how much LANs do you need, add networks.
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/b59d7fe6-2609-4da1-a79d-4eab325d8aaa" alt="Lab Configuration Overview" width="60%">
+</p>
+I added extra networks in anticipation of any future updates to our lab.
 ---
 
 ### Network Details
