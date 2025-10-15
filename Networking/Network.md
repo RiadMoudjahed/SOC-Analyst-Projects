@@ -18,7 +18,9 @@ In this project, I am going to show you how to make a lab and configure the netw
 - **pfSense:** `192.168.25.1` functions as a router and firewall, monitoring every device on the LAN.
 - **Windows 10**, **Ubuntu**, and **Kali Linux** are all on the same LAN, connected through **pfSense**.  
 - Note: These devices **will not have Internet access** unless **pfSense** is turned **ON**.
-- **Linux Server** is connected to both LAN and WAN. Because we want to monitor our **host** using **Wazuh**.
+- **Linux Server** is connected to both the **LAN** and the **WAN**.  
+- This configuration allows us to **monitor the host** using **Wazuh** through `span > em3` (traffic mirroring).
+
 
 
 ---
