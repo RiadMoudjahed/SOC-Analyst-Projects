@@ -36,12 +36,13 @@ In this project, I am going to show you how to make a lab and configure the netw
 ### Windows 10, Ubuntu, and Kali Linux Network Layout 👇
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/10c10dfc-5aa3-49b1-a1a2-e652e761b595" alt="Lab Screenshot 1" width="48%">
-  <img src="https://github.com/user-attachments/assets/40fe4cac-2338-4995-ba81-66065ecaa7a7" alt="Lab Screenshot 2" width="48%">
+  <img src="https://github.com/user-attachments/assets/51193201-572a-4a68-a832-0dda919f5bd5" alt="Lab Screenshot 1" width="48%">
+  <img src="https://github.com/user-attachments/assets/085ceebf-19a5-4d8e-adcf-656f986f9b65" alt="Lab Screenshot 2" width="48%">
 </p>
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/cacba5e2-7e42-4229-a567-f3f75c2c54de" alt="Lab Screenshot 3" width="60%">
+  <img src="https://github.com/user-attachments/assets/d622e814-bd5d-47b6-8b29-cf381eb53c0c" alt="Lab Screenshot 3" width="60%">
 </p>
+
 
 Continuing Soon...
