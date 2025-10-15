@@ -44,5 +44,13 @@ In this project, I am going to show you how to make a lab and configure the netw
   <img src="https://github.com/user-attachments/assets/d622e814-bd5d-47b6-8b29-cf381eb53c0c" alt="Lab Screenshot 3" width="60%">
 </p>
 
+---
+
+### Linux Server Network Layout 👇
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/ea49e378-3776-4517-b4a3-aee63ae5e657" alt="Centered Lab Image" width="80%">
+</p>
+
 
 Continuing Soon...
