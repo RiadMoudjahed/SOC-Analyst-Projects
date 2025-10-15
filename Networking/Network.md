@@ -51,8 +51,7 @@ I added extra networks in anticipation of any future updates to our lab.
 </p>
 
 
-**After running Windows 10 you will notice that network is undifiend, follow these steps to fix:
-**
+**After running Windows 10 you will notice that network is undifiend, follow these steps to fix:**
 
 Control Panel > Network and Internet > Network and Sharing Center > Ethernet1 > Properties > Internet Protocol Version 4, and then fill the blanks based on your network (IP Address, Subnet Mask, Default Gateway...etc) 
 
