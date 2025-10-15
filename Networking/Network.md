@@ -50,6 +50,18 @@ I added extra networks in anticipation of any future updates to our lab.
   <img src="https://github.com/user-attachments/assets/d622e814-bd5d-47b6-8b29-cf381eb53c0c" alt="Lab Screenshot 3" width="60%">
 </p>
 
+
+**After running Windows 10 you will notice that network is undifiend, follow these steps to fix:
+**
+
+Control Panel > Network and Internet > Network and Sharing Center > Ethernet1 > Properties > Internet Protocol Version 4, and then fill the blanks based on your network (IP Address, Subnet Mask, Default Gateway...etc) 
+
+For Example:
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/ccc223fb-f7ba-4c31-92c6-ac1f93ee41bb" alt="Network Diagram Overview" width="75%">
+</p>
+
 ---
 
 ### Linux Server Network Layout 👇
@@ -58,5 +70,3 @@ I added extra networks in anticipation of any future updates to our lab.
   <img src="https://github.com/user-attachments/assets/ea49e378-3776-4517-b4a3-aee63ae5e657" alt="Centered Lab Image" width="80%">
 </p>
 
-
-Continuing Soon...
