@@ -90,13 +90,7 @@ https://www.nist.gov/
 
   ## Methodology & Tools
 
-### AI-Assisted Learning
-This project was completed using AI (Claude) as a technical mentor and troubleshooting assistant. AI was used for:
-
-- **Configuration guidance:** ossec.conf syntax, rule structure, integration setup
-- **Debugging support:** Service failures, log analysis, error interpretation  
-- **Best practices:** NIST framework alignment, MITRE ATT&CK mapping
-- **Documentation templates:** Incident report structure, technical writing
+I used **AI** as a troubleshooting resource, similar to how **SOC analysts** use Stack Overflow or vendor documentation
 
 ### Hands-On Implementation
 All infrastructure deployment, configuration, and testing was performed directly:
