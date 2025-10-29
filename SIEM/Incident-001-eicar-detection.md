@@ -52,6 +52,24 @@ Successfully detected EICAR test file using Wazuh SIEM with VirusTotal integrati
 1. Rule 553: File deleted (cleanup from previous test)
 2. Rule 100200: EICAR custom detection
 3. Rule 87105: VirusTotal malware confirmation
+   
+**The rule I Implemented:**
+```
+<group name="local,syscheck,">
+
+  <!-- Simple EICAR detection based on filename -->
+  <rule id="100200" level="12">
+    <if_sid>550,554</if_sid>
+    <field name="file">eicar</field>
+    <description>EICAR test file detected: $(file)</description>
+    <mitre>
+      <id>T1204</id>
+    </mitre>
+  </rule>
+
+</group>
+```
+
 
 ## Key Metrics
 - **Detection Rate:** 100% (3/3 alerts triggered)
