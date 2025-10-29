@@ -1,4 +1,4 @@
-# Incident Report #001 - EICAR Malware Detection
+# Incident Report #001 - EICAR Malware Detection 👾🛡
 
 ## Executive Summary
 Successfully detected EICAR test file using Wazuh SIEM with VirusTotal integration, demonstrating complete **NIST SP 800-61** incident response lifecycle.
