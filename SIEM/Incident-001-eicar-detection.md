@@ -3,6 +3,13 @@
 ## Executive Summary
 Successfully detected EICAR test file using Wazuh SIEM with VirusTotal integration, demonstrating complete **NIST SP 800-61** incident response lifecycle.
 
+## What is NIST?
+
+NIST is the **National Metrology Institute** for the United States, also known as an **NMI**. Everything you use in your everyday life works because of measurements. Without precise measurements, your car wouldn’t run, your phone wouldn’t work, and hospitals couldn’t function. We maintain the measurements that make industry and society work. Learn more about our unique role in the national — and global — economy.
+https://www.nist.gov/
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/0c53e8bc-f3b9-4160-8dc2-50acc435f940" />
+
+
 ## NIST Framework Implementation
 
 ### 1. IDENTIFY Phase
