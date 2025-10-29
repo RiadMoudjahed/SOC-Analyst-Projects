@@ -70,6 +70,10 @@ Successfully detected EICAR test file using Wazuh SIEM with VirusTotal integrati
 </group>
 ```
 
+**My lab's network:** <img width="1079" height="1289" alt="image" src="https://github.com/user-attachments/assets/a2c77412-3d65-4fe6-a2e2-64ee9de02cf5" />
+
+
+
 
 ## Key Metrics
 - **Detection Rate:** 100% (3/3 alerts triggered)
