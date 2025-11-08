@@ -60,7 +60,7 @@ read_log(args.log)
 freq_10, window_10min = detect_repeated_ips(window_10min)
 freq_hour, windows_hour = detect_repeated_ips(windows_hour)
 
-suspicious_ips = [ip for ip, count, in freq_10.items() if count >= 3]
+suspicious_ips = [ip for ip, count in freq_10.items() if count >= 3]
 
 if args.window == "10min":
     freq, win_dict = detect_repeated_ips(window_10min)
