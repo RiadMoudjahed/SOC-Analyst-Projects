@@ -163,14 +163,6 @@ Seeking opportunities in:
 
 ---
 
-## 📞 Connect
-
-- **LinkedIn:** https://www.linkedin.com/in/riad-moudjahed/
-- **Portfolio:** https://github.com/RiadMoudjahed
-- **Email:** riad.moudjahed@gmail.com
-
----
-
 ## ⚖️ Disclaimer
 
 All projects in this repository are developed for:
