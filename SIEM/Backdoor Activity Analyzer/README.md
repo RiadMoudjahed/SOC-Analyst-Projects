@@ -1,7 +1,5 @@
 # 🛡️ Backdoor Activity Analyzer
 
-**في سبيل الله** *(For the sake of Allah)*
-
 A Python-based security tool designed to detect suspicious IP patterns in network logs that may indicate backdoor or C2 (Command & Control) activity. Built for SOC analysts and security researchers.
 
 ---
