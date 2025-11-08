@@ -33,18 +33,6 @@ By detecting abnormal connection frequencies, it helps security teams identify c
 - Python 3.7+
 - No external dependencies (uses only standard library)
 
-### Setup
-```bash
-# Clone the repository
-git clone https://github.com/yourusername/backdoor-activity-analyzer.git
-
-# Navigate to directory
-cd backdoor-activity-analyzer
-
-# Run directly (no installation needed)
-python backdoor_analyzer.py --help
-```
-
 ---
 
 ## 📖 Usage
