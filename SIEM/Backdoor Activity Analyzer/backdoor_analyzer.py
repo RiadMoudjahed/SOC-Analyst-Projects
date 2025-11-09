@@ -96,7 +96,7 @@ suspicious_ips = [ip for ip, count in freq.items() if count >= args.threshold]
 for ip in suspicious_ips:
     location = get_geo_info(ip)
     print (f"{ip:<15} | {location} | Frequency {freq[ip]} Periods | Times: ")
-    for w in window_10min_map[ip]:
+    for w in win_dict[ip]:
         try:
             print (f"   - {w}")
         except KeyboardInterrupt:
