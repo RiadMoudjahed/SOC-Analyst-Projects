@@ -72,6 +72,7 @@ if args.window == "10min":
 else:
     freq, win_dict = detect_repeated_ips(windows_hour)
 
+###==== PRINTING THE RESULTS ====###
 print(f"\n=== Suspicious IPs ({args.window} window) ===")
 
 for ip in suspicious_ips:
