@@ -78,22 +78,25 @@ def detect_repeated_ips(window_dict):
 ###==== THE EXECUTION ====###
 read_log(args.log)
 
-freq_10, window_10min = detect_repeated_ips(window_10min)
-freq_hour, windows_hour = detect_repeated_ips(windows_hour)
-
-suspicious_ips = [ip for ip, count in freq_10.items() if count >= 3]
+freq_10, window_10min_map = detect_repeated_ips(window_10min)
+freq_hour, windows_hour_map = detect_repeated_ips(windows_hour)
 
 if args.window == "10min":
-    freq, win_dict = detect_repeated_ips(window_10min)
+    freq = freq_10
+    win_dict = window_10min_map
 else:
-    freq, win_dict = detect_repeated_ips(windows_hour)
+    freq = freq_hour
+    win_dict = windows_hour_map
 
 ###==== PRINTING THE RESULTS ====###
 print(f"\n=== Suspicious IPs ({args.window} window) ===")
 
+suspicious_ips = [ip for ip, count in freq.items() if count >= 3]
+
 for ip in suspicious_ips:
-    print (f"{ip:<15} | Frequency {freq_10[ip]} Periods | Times: ")
-    for w in window_10min[ip]:
+    location = get_geo_info(ip)
+    print (f"{ip:<15} | Frequency {freq[ip]} Periods | Times: ")
+    for w in window_10min_map[ip]:
         try:
             print (f"   - {w}")
         except KeyboardInterrupt:
