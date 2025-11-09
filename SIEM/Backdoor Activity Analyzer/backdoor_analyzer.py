@@ -16,9 +16,11 @@ args = parser.parse_args()
 ip_pattern = re.compile(r"(?P<ip>(25[0-5]|2[0-4]\d|1\d{2}|[0-9]{1,3})(\.(25[0-5]|2[0-4]\d|1\d{2}|[0-9]{1,3})){3})")
 time_pattern = re.compile(r"(?P<timestamp>\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z)")
 
+###==== CREATE AUTO VALUE DICTIONARY ====###
 windows_hour= defaultdict(set)
 window_10min = defaultdict(set)
 
+###==== DEFINING FUNCTIONS ====###
 def key_hour(dt):
     return dt.replace(minute=0, second=0)
 
