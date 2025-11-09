@@ -24,6 +24,7 @@ By detecting abnormal connection frequencies, it helps security teams identify c
 - **Timestamp Parsing**: Supports ISO 8601 format logs
 - **Fast Processing**: Efficiently handles large log files
 - **Clear Output**: Easy-to-read suspicious IP reports with timestamps
+- **Location:** Gets the IP address location
 
 ---
 
@@ -69,14 +70,14 @@ python backdoor_analyzer.py -l server.log -w hour -ts 4
 ## 📊 Example Output
 ```
 === Suspicious IPs (10min window) ===
-192.168.1.100   | Frequency 5 Periods | Times: 
+195.20*.1**.10* | Russian Federation, Novosibirsk | Frequency 5 Periods | Times:
    - 2025-10-31 14:30:00
    - 2025-10-31 14:40:00
    - 2025-10-31 14:50:00
    - 2025-10-31 15:00:00
    - 2025-10-31 15:10:00
 
-10.0.0.50       | Frequency 4 Periods | Times: 
+10.10.20.7      | Unknown location | Frequency 1513 Periods | Times: 
    - 2025-10-31 14:20:00
    - 2025-10-31 14:30:00
    - 2025-10-31 14:40:00
@@ -139,6 +140,7 @@ The tool expects logs with:
 - Efficiently processes large log files using Python generators
 - Memory-optimized with `defaultdict` and `set` data structures
 - Handles millions of log entries
+- Recognizes multiple locations of IP addresses
 
 ---
 
@@ -158,7 +160,6 @@ Want to add features? Consider:
 - Support for additional log formats
 - Export results to JSON/CSV
 - Integration with SIEM platforms
-- GeoIP lookup for flagged IPs
 - Automated alerting (email/webhook)
 
 ---
