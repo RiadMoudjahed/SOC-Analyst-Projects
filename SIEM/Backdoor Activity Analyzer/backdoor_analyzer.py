@@ -1,7 +1,8 @@
 ###==== IMPORT LIBRARIES ====###
 import re
-import argparse
 import time
+import argparse
+import geoip2.database
 from datetime import datetime
 from collections import defaultdict
 
@@ -20,7 +21,21 @@ time_pattern = re.compile(r"(?P<timestamp>\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z)"
 windows_hour= defaultdict(set)
 window_10min = defaultdict(set)
 
+###==== READ THE GEOIP DATABASE ====###
+db_reader = geoip2.database.Reader("E:/your/path/to/GeoLite2-City.mmdb")
+
 ###==== DEFINING FUNCTIONS ====###
+def get_geo_info(ip):
+    try:
+        response = db_reader.city(ip)    # GET THE LOCATION FROM THE DB BASED ON THE IP
+        country = response.country.name or "Unknown country"    # GET COUNTRY NAME
+        city = response.city.name or "Unknown city"    # GET CITY NAME
+        return f"{country}, {city}"
+    except geoip2.errors.AddressNotFoundError:
+        return "Unknown location"    # LOCATION NOT FOUND
+    except Exception as e:
+        return f"Error: {e}"    # INVALID IP ADDRESS, INVALID DB...etc
+
 def key_hour(dt):
     return dt.replace(minute=0, second=0)    # GET HOURLY PERIODS
 
