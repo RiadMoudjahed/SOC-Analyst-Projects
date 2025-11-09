@@ -70,12 +70,11 @@ python backdoor_analyzer.py -l server.log -w hour -ts 4
 ## 📊 Example Output
 ```
 === Suspicious IPs (10min window) ===
-195.20*.1**.10* | Russian Federation, Novosibirsk | Frequency 5 Periods | Times:
+10.10.20.5 | Russian Federation, Novosibirsk | Frequency 335 Periods | Times:
    - 2025-10-31 14:30:00
    - 2025-10-31 14:40:00
    - 2025-10-31 14:50:00
    - 2025-10-31 15:00:00
-   - 2025-10-31 15:10:00
 
 10.10.20.7      | Unknown location | Frequency 1513 Periods | Times: 
    - 2025-10-31 14:20:00
