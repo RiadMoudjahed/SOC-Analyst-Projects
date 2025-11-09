@@ -10,7 +10,7 @@ from collections import defaultdict
 parser = argparse.ArgumentParser(description="Backdoor Activity Analyzer")
 parser.add_argument("--log","-l", required=True, help="Path to log file")
 parser.add_argument("--window", "-w", choices=["10min", "hour"], default="10min", help="Time window size")
-parser.add_argument("--threshold", "-ts", type=int, default=3, help="Minimum frequency to consider suspicious")
+parser.add_argument("--threshold", "-ts", type=int, default=20, help="Minimum frequency to consider suspicious")
 args = parser.parse_args()
 
 ###==== THE PATTERNS ====###
@@ -91,7 +91,7 @@ else:
 ###==== PRINTING THE RESULTS ====###
 print(f"\n=== Suspicious IPs ({args.window} window) ===")
 
-suspicious_ips = [ip for ip, count in freq.items() if count >= 3]
+suspicious_ips = [ip for ip, count in freq.items() if count >= args.threshold]
 
 for ip in suspicious_ips:
     location = get_geo_info(ip)
