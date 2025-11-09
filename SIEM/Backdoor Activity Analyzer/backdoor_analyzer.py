@@ -12,6 +12,7 @@ parser.add_argument("--window", "-w", choices=["10min", "hour"], default="10min"
 parser.add_argument("--threshold", "-ts", type=int, default=3, help="Minimum frequency to consider suspicious")
 args = parser.parse_args()
 
+###==== SET & FIND PATTERNS ====###
 ip_pattern = re.compile(r"(?P<ip>(25[0-5]|2[0-4]\d|1\d{2}|[0-9]{1,3})(\.(25[0-5]|2[0-4]\d|1\d{2}|[0-9]{1,3})){3})")
 time_pattern = re.compile(r"(?P<timestamp>\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z)")
 
