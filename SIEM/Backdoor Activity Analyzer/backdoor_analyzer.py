@@ -1,10 +1,11 @@
-### IMPORT LIBRARIES ###
+###==== IMPORT LIBRARIES ====###
 import re
 import argparse
 import time
 from datetime import datetime
 from collections import defaultdict
 
+###==== MAKE A CLI OF THE TOOL ====###
 parser = argparse.ArgumentParser(description="Backdoor Activity Analyzer")
 parser.add_argument("--log","-l", required=True, help="Path to log file")
 parser.add_argument("--window", "-w", choices=["10min", "hour"], default="10min", help="Time window size")
