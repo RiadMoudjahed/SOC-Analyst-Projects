@@ -12,7 +12,7 @@ parser.add_argument("--window", "-w", choices=["10min", "hour"], default="10min"
 parser.add_argument("--threshold", "-ts", type=int, default=3, help="Minimum frequency to consider suspicious")
 args = parser.parse_args()
 
-###==== SET & FIND PATTERNS ====###
+###==== THE PATTERNS ====###
 ip_pattern = re.compile(r"(?P<ip>(25[0-5]|2[0-4]\d|1\d{2}|[0-9]{1,3})(\.(25[0-5]|2[0-4]\d|1\d{2}|[0-9]{1,3})){3})")
 time_pattern = re.compile(r"(?P<timestamp>\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z)")
 
@@ -22,11 +22,11 @@ window_10min = defaultdict(set)
 
 ###==== DEFINING FUNCTIONS ====###
 def key_hour(dt):
-    return dt.replace(minute=0, second=0)
+    return dt.replace(minute=0, second=0)    # GET HOURLY PERIODS
 
 def key_10min(dt):
-    minute_bucket = dt.minute - (dt.minute % 10)
-    return dt.replace(minute=minute_bucket, second=0)
+    minute_bucket = dt.minute - (dt.minute % 10)    # ROUND DOWN TIMESTAMP TO THE NEAREST 10-MINUTES WINDOW (e.g; 10:27 → 10:20)
+    return dt.replace(minute=minute_bucket, second=0)    # NULL SECONDS, WE ONLY NEEED MINUTES
 
 def key_minute(dt):
     return dt.replace(second=0)
@@ -60,6 +60,7 @@ def detect_repeated_ips(window_dict):
             ip_window[ip].append(window)
     return ip_frequency, ip_window
 
+###==== THE EXECUTION ====###
 read_log(args.log)
 
 freq_10, window_10min = detect_repeated_ips(window_10min)
