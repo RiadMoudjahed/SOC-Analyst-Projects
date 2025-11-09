@@ -29,7 +29,7 @@ def key_10min(dt):
     return dt.replace(minute=minute_bucket, second=0)    # NULL SECONDS, WE ONLY NEEED MINUTES
 
 def key_minute(dt):
-    return dt.replace(second=0)
+    return dt.replace(second=0)    # GET THE TIME WITHOUT SECONDS
 
 def read_log(filepath):
     with open (filepath, "r", encoding="utf-8") as file:
