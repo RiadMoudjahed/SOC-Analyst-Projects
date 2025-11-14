@@ -37,12 +37,12 @@ This tool captures and analyzes network packets in real-time, searching for pred
 **Windows:**
 ```bash
 # Run as Administrator
-python packet_ids.py
+python basic_packet_IDS.py
 ```
 
 **Linux:**
 ```bash
-sudo python3 packet_ids.py
+sudo python3 basic_packet_IDS.py
 ```
 
 ### How It Works
