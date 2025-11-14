@@ -78,7 +78,7 @@ sudo python3 packet_ids.py
 
 ![IDS Demo](https://github.com/user-attachments/assets/3de5f80d-84c4-41f9-8124-d676dfb9b4c9)
 
-*Example: Tool detecting a suspicious packet patterns in network traffic*
+*Example: Tool detecting a suspicious packet patterns in network traffic by sending the malware signature for testing*
 
 ---
 
