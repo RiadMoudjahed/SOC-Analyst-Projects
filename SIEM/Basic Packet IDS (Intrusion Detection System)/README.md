@@ -30,25 +30,6 @@ This tool captures and analyzes network packets in real-time, searching for pred
 - Administrator/Root privileges (required for packet capture)
 - Npcap (Windows) or libpcap (Linux)
 
-### Setup
-
-1. **Clone the repository**
-```bash
-git clone https://github.com/yourusername/basic-packet-ids.git
-cd basic-packet-ids
-```
-
-2. **Install dependencies**
-```bash
-pip install scapy
-```
-
-3. **Install Npcap (Windows only)**
-   - Download from: https://npcap.com/
-   - Install with "WinPcap API-compatible mode" enabled
-
----
-
 ## 📖 Usage
 
 ### Basic Usage
