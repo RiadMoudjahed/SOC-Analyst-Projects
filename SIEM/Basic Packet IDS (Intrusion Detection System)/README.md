@@ -293,7 +293,7 @@ This project is open-source and available for educational purposes.
 If you're interested in network security and intrusion detection:
 - [Scapy Documentation](https://scapy.readthedocs.io/)
 - [Network Security Basics](https://www.cloudflare.com/learning/security/what-is-network-security/)
-- [IDS vs IPS Explained](https://www.cisco.com/c/en/us/products/security/intrusion-prevention-system-ips/what-is-an-intrusion-detection-system.html)
+- [IDS vs IPS VS Firewall Explained](https://www.paloaltonetworks.com/cyberpedia/firewall-vs-ids-vs-ips)
 
 ---
 
