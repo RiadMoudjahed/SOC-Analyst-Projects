@@ -1,4 +1,4 @@
-![2025-11-1406-53-15-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/213b9c7c-a2e2-4f77-bd18-4dca17dd20f9)# 🛡️ Basic Packet IDS (Intrusion Detection System)
+# 🛡️ Basic Packet IDS (Intrusion Detection System)
 
 A lightweight, real-time network intrusion detection system built with Python and Scapy. Monitors network traffic for suspicious patterns and malware signatures in packet payloads.
 
