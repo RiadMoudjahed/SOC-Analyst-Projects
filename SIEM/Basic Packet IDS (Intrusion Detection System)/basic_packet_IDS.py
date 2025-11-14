@@ -25,7 +25,7 @@ def packet_capture(packet):
     global last_suspicious
 
     if IP not in packet: 
-        print ("No packet captured...")
+        print ("No packet captured...\n")
         return
 
     src_ip = packet[IP].src   # Get the source IP of the packet
@@ -51,7 +51,7 @@ def main():
     try:
         input("Press Enter to stop...\n")   # Quit the tool by pressing ENTER
     except KeyboardInterrupt:
-        print ("Interrupted by user...")    
+        print ("Interrupted by user...\n")    
 
     STOP_FLAG.set()   # This function changes the internal state of STOP_FLAG from False (not set) to True (set/enabled).
     thread.join()   # It makes the main thread (which executes the main function) wait until the specified thread has completely finished executing it.
@@ -66,7 +66,7 @@ def main():
             dst = packet[IP].dst    # The IP layer within the packet (packet[IP]) is accessed, and then the destination IP address field (dst) is extracted from it.
             print (f"[{i}] {src} -> {dst}")   # Print the packet number (i) followed by the source IP address and the destination IP address, for each packet detected.
     else:
-        print ("No suspicious packets found.")  
+        print ("No suspicious packets found.\n")  
 
 if __name__ == "__main__":
     main()
