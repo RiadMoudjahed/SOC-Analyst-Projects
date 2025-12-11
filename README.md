@@ -21,9 +21,9 @@ This repository showcases practical security engineering skills through:
 
 ## 📁 Projects
 
-### 🔥 [Backdoor Activity Analyzer](https://github.com/RiadMoudjahed/SOC-Analyst-Projects/tree/main/SIEM/Backdoor%20Activity%20Analyzer)
+### 🤖 [Backdoor Activity Analyzer](https://github.com/RiadMoudjahed/SOC-Analyst-Projects/tree/main/SIEM/Backdoor%20Activity%20Analyzer)
 
-Python-based log analysis tool that detects C2 beaconing patterns and persistent backdoor connections through temporal pattern recognition.
+A Python-based security tool with Machine Learning capabilities designed to detect sophisticated backdoor and C2 (Command & Control) activity in network logs. Built for SOC analysts and security researchers who need intelligent, adaptive threat detection.
 
 **Skills Demonstrated:**
 - Threat hunting methodology
