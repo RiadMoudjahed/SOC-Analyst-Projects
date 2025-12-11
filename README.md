@@ -29,9 +29,9 @@ A Python-based security tool with Machine Learning capabilities designed to dete
 - Threat hunting methodology
 - Log analysis & pattern recognition
 - Python automation for security
-- Behavioral anomaly detection
+- Isolation Forest anomaly detection
 
-**Tech Stack:** Python, Regex, Time-series analysis
+**Tech Stack:** Python, Regex, Time-series analysis, Machine learning
 
 ---
 
