@@ -1,13 +1,15 @@
-<p align="center">
+<div align="center">
+
+# 🛡️ ML-Enhanced Backdoor Activity Analyzer
+  
   <img
     width="480"
     height="480"
     alt="Image"
     src="https://github.com/user-attachments/assets/5afee59b-2428-4c37-9658-362805c0c2c5"
   />
-</p>
+</div>
 
-# 🛡️ ML-Enhanced Backdoor Activity Analyzer
 
 A Python-based security tool with **Machine Learning capabilities** designed to detect sophisticated backdoor and C2 (Command & Control) activity in network logs. Built for SOC analysts and security researchers who need intelligent, adaptive threat detection.
 
